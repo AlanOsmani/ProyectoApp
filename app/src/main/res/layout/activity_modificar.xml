@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/background_light"
+    tools:context=".ModificarActivity">
+
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antic_slab"
+            android:text="Modificar citas"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/firstRow">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Qué cita desea modificar?"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:textSize="16dp"/>
+
+        <SearchView
+            android:id="@+id/busca_mod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/redondeado"
+            android:backgroundTint="#E1F5FE"
+            android:text="Busqueda"
+            android:textColor="@android:color/darker_gray"
+            android:touchscreenBlocksFocus="false" />
+
+        <ScrollView
+            android:id="@+id/scroll_mod"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/ModificarRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redondeado"
+            android:backgroundTint="#0288D1"
+            android:onClick="ModificarRegresar"
+            android:text="Regresar"
+            android:textColor="@android:color/background_light"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

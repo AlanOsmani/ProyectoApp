@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/background_light"
+    tools:context=".AgendarActivity">
+
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/antic_slab"
+            android:text="Agendar cita"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/firstRow">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione la fecha para su cita"
+            android:textSize="16dp"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/verticalLinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bfecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#039BE5"
+                android:text="Fecha"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/efecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="textPersonName"
+                android:hint="DD / MM / YY"
+                android:textColor="@android:color/tertiary_text_dark" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/secondRow">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccione el horario para su cita"
+            android:textSize="16dp"
+            android:textColor="@android:color/tertiary_text_dark" />
+
+        <LinearLayout
+            android:id="@+id/verticalLinearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bhora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#039BE5"
+                android:text="Hora"
+                android:textColor="@android:color/background_light" />
+
+            <EditText
+                android:id="@+id/ehora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_marginHorizontal="15dp"
+                android:gravity="center_horizontal"
+                android:inputType="textPersonName"
+                android:hint="hh : mm"
+                android:textColor="@android:color/tertiary_text_dark" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourthRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="15dp"
+        app:layout_constraintTop_toBottomOf="@id/thirdRow">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="263dp"
+            android:layout_height="43dp"
+            android:text="*Nota: Una vez seleccionados los campos se verificara la disponibilidad para la cita."
+            android:textColor="@android:color/tertiary_text_dark" />
+
+        <LinearLayout
+            android:id="@+id/verticalLinearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingVertical="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondeado"
+                android:backgroundTint="#0288D1"
+                android:onClick="AgendarRegresar"
+                android:text="Regresar"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/button_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/redondeado"
+                android:backgroundTint="#0288D1"
+                android:onClick="AgendarV"
+                android:text="Agendar"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="@android:color/background_light" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
