@@ -41,4 +41,10 @@ public class MostrarActivity extends AppCompatActivity {
         Intent mostrarReg = new Intent(this, MainActivity.class);
         startActivity(mostrarReg);
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(MostrarActivity.this, MainActivity.class));
+        finish();
+    }
 }

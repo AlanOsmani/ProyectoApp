@@ -317,4 +317,9 @@ public class RegistroActivity<DatabaseReference> extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(RegistroActivity.this, MainActivity.class));
+        finish();
+    }
 }

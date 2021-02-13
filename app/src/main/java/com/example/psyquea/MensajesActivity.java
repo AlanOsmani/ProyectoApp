@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -49,7 +50,7 @@ public class MensajesActivity extends AppCompatActivity {
 
 
     EditText et_mensaje_txt;
-    ImageButton btn_enviar_msj;
+    ImageButton btn_enviar_msj, btn_videoChat;
 
     //ID CHAT GLOBAL
     String id_chat_global;
@@ -92,6 +93,20 @@ public class MensajesActivity extends AppCompatActivity {
 
         et_mensaje_txt = findViewById(R.id.et_txt_mensaje);
         btn_enviar_msj = findViewById(R.id.btn_enviar_msj);
+        btn_videoChat = findViewById(R.id.btn_videoChat);
+
+        //Redirecciona al videochat
+        btn_videoChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MensajesActivity.this, CallActivity.class);
+                intent.putExtra("friendUser", usuario);
+                intent.putExtra("username", user.getDisplayName());
+                intent.putExtra("userID", user.getUid());
+                intent.putExtra("friendID", id_user);
+                startActivity(intent);
+            }
+        });
 
 
         //Funcionalidad de boton de enviar mensaje

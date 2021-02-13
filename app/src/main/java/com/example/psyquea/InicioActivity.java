@@ -173,7 +173,7 @@ public class InicioActivity extends AppCompatActivity {
                                 ContextCompat.getColor(getApplicationContext(), R.color.colorAccent)
                         );
                         badgeDrawable.setVisible(true);
-                        badgeDrawable.setNumber(1);
+                        //badgeDrawable.setNumber(1);
                         break;
                     }
                     case 3:{

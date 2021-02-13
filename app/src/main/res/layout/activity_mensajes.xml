@@ -54,6 +54,7 @@
                 android:src="@drawable/ic_desconectado"/>
 
             <ImageButton
+                android:id="@+id/btn_videoChat"
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:layout_gravity="right"

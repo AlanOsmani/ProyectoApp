@@ -19,4 +19,10 @@ public class CancelarActivity extends AppCompatActivity {
         Intent cancelarReg = new Intent(this, MainActivity.class);
         startActivity(cancelarReg);
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(CancelarActivity.this, MainActivity.class));
+        finish();
+    }
 }

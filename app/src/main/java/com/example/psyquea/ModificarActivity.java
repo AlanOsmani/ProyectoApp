@@ -19,4 +19,10 @@ public class ModificarActivity extends AppCompatActivity {
         Intent modificarReg = new Intent(this, MainActivity.class);
         startActivity(modificarReg);
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(ModificarActivity.this, MainActivity.class));
+        finish();
+    }
 }

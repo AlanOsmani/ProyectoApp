@@ -53,7 +53,7 @@
             android:id="@+id/MostrarRegresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/redondeado"
+            android:background="@drawable/button_rounded"
             android:backgroundTint="#0288D1"
             android:onClick="MostrarRegresar"
             android:text="Regresar"

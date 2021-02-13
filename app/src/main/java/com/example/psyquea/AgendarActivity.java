@@ -99,4 +99,10 @@ public class AgendarActivity extends AppCompatActivity implements View.OnClickLi
             Toast.makeText(this, "Verificando disponibilidad de la cita...", Toast.LENGTH_LONG).show();
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(AgendarActivity.this, MainActivity.class));
+        finish();
+    }
 }
