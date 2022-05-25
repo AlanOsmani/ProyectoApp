@@ -112,6 +112,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
                 android:hint="Escriba el motivo"
+                android:minHeight="48dp"
                 android:textColor="@android:color/tertiary_text_dark" />
 
             <LinearLayout
@@ -130,7 +131,8 @@
                     android:background="@drawable/button_rounded"
                     android:backgroundTint="#0288D1"
                     android:text="Cancelarla"
-                    android:textColor="@android:color/background_light" />
+                    android:textColor="@android:color/background_light"
+                    app:backgroundTint="@color/purple_A700" />
 
                 <Button
                     android:id="@+id/cancelarRegresar"
@@ -141,7 +143,8 @@
                     android:backgroundTint="#0288D1"
                     android:onClick="CancelarRegresar"
                     android:text="Regresar"
-                    android:textColor="@android:color/background_light"/>
+                    android:textColor="@android:color/background_light"
+                    app:backgroundTint="@color/purple_A700" />
 
 
             </LinearLayout>

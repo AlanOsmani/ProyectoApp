@@ -57,7 +57,8 @@
             android:backgroundTint="#0288D1"
             android:onClick="MostrarRegresar"
             android:text="Regresar"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"
+            app:backgroundTint="@color/purple_A700" />
 
     </LinearLayout>
 

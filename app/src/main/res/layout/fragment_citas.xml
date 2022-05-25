@@ -7,36 +7,38 @@
     tools:context=".fragments.citasFragment">
 
 
-
     <LinearLayout
         android:id="@+id/titleRow"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:orientation="vertical"
+        android:background="@drawable/degradados"
         android:gravity="center"
-        android:background="@drawable/degradado"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/agenda"
-            android:textColor="@android:color/darker_gray"
-            app:srcCompat="@drawable/psicologia" />
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/antic_slab"
             android:layout_margin="15dp"
-            android:text="CITAS"
+            android:fontFamily="@font/antic_slab"
+            android:text="MENÚ DE CITAS"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:contentDescription="TODO"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/agenda"
+            app:srcCompat="@drawable/simbolo"
+            tools:src="@drawable/simbolo" />
 
     </LinearLayout>
 
@@ -67,10 +69,10 @@
             android:layout_width="150dp"
             android:layout_height="140dp"
             android:layout_margin="10dp"
-            android:padding="15dp"
             android:backgroundTint="@android:color/background_light"
             android:drawableTop="@drawable/mostrar"
-            android:text="Mostrar Cita"
+            android:padding="15dp"
+            android:text="Visulizar Cita"
             android:textColor="@color/black"
             app:layout_constraintStart_toEndOf="@+id/agenda"
             app:layout_constraintTop_toTopOf="parent" />
@@ -126,13 +128,13 @@
 
         <Button
             android:id="@+id/btn_info"
-            android:text="Ingresar al menu de citas"
-            android:drawableTop="@drawable/modificar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:layout_margin="5dp"
-            android:paddingVertical="15dp"/>
+            android:drawableTop="@drawable/modificar"
+
+            android:paddingVertical="15dp"
+            android:text="Ingresar al menu de citas" />
 
     </LinearLayout>
 

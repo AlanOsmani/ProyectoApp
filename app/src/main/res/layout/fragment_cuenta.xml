@@ -7,9 +7,7 @@
     android:fillViewport="true"
     tools:context=".RegistroActivity">
 
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".fragments.cuentaFragment">
@@ -24,10 +22,10 @@
                 android:id="@+id/tv_titulo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mi cuenta"
-                android:textSize="30dp"
                 android:gravity="top"
-                android:textColor="@color/blue_900"
+                android:text="Mi cuenta"
+                android:textColor="@color/teal_200"
+                android:textSize="30dp"
                 android:textStyle="bold" />
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -42,48 +40,52 @@
                 android:id="@+id/tv_nombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="Nombre de usuario"
+                android:textColor="@color/teal_200"
                 android:textSize="24dp"
-                android:textColor="@color/blue_900"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:textStyle="bold" />
 
 
             <Button
                 android:id="@+id/btn_cambiar_datos"
-                android:text="Cambiar datos"
-                android:drawableLeft="@drawable/ic_cuenta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:paddingVertical="15dp"/>
+                android:drawableLeft="@drawable/ic_cuenta"
+                android:paddingVertical="15dp"
+                android:text="Cambiar datos"
+                app:backgroundTint="@color/teal_200" />
 
             <Button
                 android:id="@+id/btn_ayuda"
-                android:text="Ayuda"
-                android:drawableLeft="@drawable/ic_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:paddingVertical="15dp"/>
+                android:drawableLeft="@drawable/ic_info"
+                android:paddingVertical="15dp"
+                android:text="Ayuda"
+                app:backgroundTint="@color/teal_200" />
 
             <Button
                 android:id="@+id/btn_info"
-                android:text="About us"
-                android:drawableLeft="@drawable/ic_pokemon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:paddingVertical="15dp"/>
+                android:drawableLeft="@drawable/ic_pokemon"
+                android:paddingVertical="15dp"
+                android:text="About us"
+                app:backgroundTint="@color/teal_200" />
 
             <Button
                 android:id="@+id/btn_cerrar_sesion"
-                android:text="Cerrar sesion"
-                android:drawableLeft="@drawable/ic_cerrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:paddingVertical="15dp"/>
+                android:drawableLeft="@drawable/ic_cerrar"
+                android:paddingVertical="15dp"
+                android:text="Cerrar sesion"
+                app:backgroundTint="@color/teal_200" />
         </LinearLayout>
     </FrameLayout>
 

@@ -32,18 +32,18 @@
                 android:src="@drawable/ic_contactos"/>
 
             <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:shadowColor="@color/black"
-                android:shadowRadius="2"
                 android:shadowDx="1"
                 android:shadowDy="1"
-                android:id="@+id/tv_title"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:text="Tus contactos y solicitudes"
+                android:shadowRadius="2"
+                android:text="Comunicación"
                 android:textColor="@color/white"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 

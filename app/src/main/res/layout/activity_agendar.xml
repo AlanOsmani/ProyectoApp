@@ -60,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#039BE5"
                 android:text="Fecha"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                app:backgroundTint="@color/purple_A700" />
 
             <EditText
                 android:id="@+id/efecha"
@@ -69,8 +70,9 @@
                 android:layout_marginHorizontal="15dp"
                 android:ems="10"
                 android:gravity="center_horizontal"
-                android:inputType="textPersonName"
                 android:hint="DD / MM / YY"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
                 android:textColor="@android:color/tertiary_text_dark" />
 
 
@@ -108,17 +110,19 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#039BE5"
                 android:text="Hora"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                app:backgroundTint="@color/purple_A700" />
 
             <EditText
                 android:id="@+id/ehora"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
                 android:layout_marginHorizontal="15dp"
+                android:ems="10"
                 android:gravity="center_horizontal"
-                android:inputType="textPersonName"
                 android:hint="hh : mm"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
                 android:textColor="@android:color/tertiary_text_dark" />
 
 
@@ -154,23 +158,25 @@
                 android:id="@+id/button_r"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
                 android:background="@drawable/button_rounded"
                 android:backgroundTint="#0288D1"
                 android:onClick="AgendarRegresar"
                 android:text="Regresar"
-                android:layout_marginHorizontal="10dp"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                app:backgroundTint="@color/purple_A700" />
 
             <Button
                 android:id="@+id/button_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
                 android:background="@drawable/button_rounded"
                 android:backgroundTint="#0288D1"
                 android:onClick="AgendarV"
                 android:text="Agendar"
-                android:layout_marginHorizontal="10dp"
-                android:textColor="@android:color/background_light" />
+                android:textColor="@android:color/background_light"
+                app:backgroundTint="@color/purple_A700" />
 
 
         </LinearLayout>

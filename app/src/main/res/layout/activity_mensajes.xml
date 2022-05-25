@@ -70,11 +70,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
-        android:layout_below="@+id/appbar"
-        android:layout_above="@+id/linear_mensaje"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_mensaje"
+        android:layout_below="@+id/appbar">
+
     </androidx.recyclerview.widget.RecyclerView>
 
     <LinearLayout

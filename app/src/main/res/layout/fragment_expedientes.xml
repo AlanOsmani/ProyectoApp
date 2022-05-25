@@ -7,10 +7,10 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="40dp"
-        android:text="Proximamente!!!" />
+        android:gravity="center"
+        android:text="Aun no queda "
+        android:textSize="40dp" />
 
 </FrameLayout>

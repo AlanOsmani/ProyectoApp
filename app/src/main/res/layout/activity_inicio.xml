@@ -11,15 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:visibility="gone"
         android:orientation="vertical"
+        android:visibility="gone"
         app:layout_constraintTop_toTopOf="parent">
 
         <ProgressBar
             android:id="@+id/progresBar"
             android:layout_width="wrap_content"
-            android:visibility="gone"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
 
     </LinearLayout>
 
@@ -27,6 +27,8 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -34,20 +36,24 @@
         <ImageView
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:contentDescription="TODO"
             android:src="@drawable/buho"
-            android:layout_marginRight="5dp"/>
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="3dp"
+            tools:srcCompat="@drawable/cerebro" />
 
         <TextView
-            android:shadowColor="@color/black"
-            android:layout_marginLeft="5dp"
             android:id="@+id/tv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jura_bold"
+            android:shadowColor="@color/black"
+            android:text="MINDCARE"
+            android:textColor="@color/purple_700"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:text="PSYQUEA"
-            android:fontFamily="@font/jura_bold"
-            android:textColor="@color/blue_800"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            tools:layout_editor_absoluteX="71dp"
+            tools:layout_editor_absoluteY="15dp" />
 
     </androidx.appcompat.widget.Toolbar>
 

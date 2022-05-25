@@ -18,11 +18,11 @@
             android:id="@+id/tv_tipo_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cliente"
             android:gravity="center"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textColor="#4FC3F7"
-            android:textSize="50dp"/>
+            android:text="Paciente"
+            android:textColor="@color/purple_A700"
+            android:textSize="50dp"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/linearlayout_tipo"
@@ -35,10 +35,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cambiar tipo de usuario: "
-                android:textSize="20dp"
-                android:textColor="#4FC3F7"
-                android:layout_marginHorizontal="10dp"/>
+                android:layout_marginHorizontal="10dp"
+                android:text="Cambiar de usuario:"
+                android:textColor="@color/purple_A700"
+                android:textSize="20dp" />
 
             <ToggleButton
                 android:id="@+id/tgbtn_tipo"
@@ -65,36 +65,33 @@
                 android:id="@+id/img_user"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:src="@drawable/buho"
+                android:src="@drawable/cerebro"
                 app:civ_border_color="#4FC3F7"
                 app:civ_border_width="2dp" />
         </LinearLayout>
 
 
-
-
         <EditText
             android:id="@+id/nombreRegis"
-            android:layout_width="match_parent"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginLeft="32dp"
+            android:layout_width="349dp"
+            android:layout_height="41dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="32dp"
-            android:layout_marginRight="32dp"
             android:layout_marginBottom="42dp"
+            android:backgroundTint="#4FC3F7"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="Nombre"
-            app:layout_constraintTop_toBottomOf="@id/linearlayout_foto"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_A700"
             app:layout_constraintBottom_toTopOf="@+id/apellidoRegis"
-            android:textColorHint="#4FC3F7"
-            android:backgroundTint="#4FC3F7" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearlayout_foto" />
 
         <EditText
             android:id="@+id/apellidoRegis"
-            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -102,19 +99,19 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
+            android:backgroundTint="#4FC3F7"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="Apellidos"
-            android:textColorHint="#4FC3F7"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_A700"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nombreRegis"
-            android:backgroundTint="#4FC3F7"/>
+            app:layout_constraintTop_toBottomOf="@+id/nombreRegis" />
 
         <EditText
             android:id="@+id/emailRegis"
-            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -122,19 +119,19 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
+            android:backgroundTint="#4FC3F7"
             android:ems="10"
-            android:inputType="textPersonName"
             android:hint="Email"
-            android:textColorHint="#4FC3F7"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_A700"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/apellidoRegis"
-            android:backgroundTint="#4FC3F7"/>
+            app:layout_constraintTop_toBottomOf="@+id/apellidoRegis" />
 
 
         <EditText
             android:id="@+id/telRegis"
-            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -142,14 +139,15 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
+            android:backgroundTint="#4FC3F7"
             android:ems="10"
-            android:inputType="phone"
             android:hint="Teléfono"
-            android:textColorHint="#4FC3F7"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_A700"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/emailRegis"
-            android:backgroundTint="#4FC3F7"/>
+            app:layout_constraintTop_toBottomOf="@+id/emailRegis" />
 
         <EditText
             android:id="@+id/cedulaRegis"
@@ -173,7 +171,6 @@
 
         <EditText
             android:id="@+id/passRegis"
-            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -181,18 +178,18 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
+            android:backgroundTint="#4FC3F7"
             android:ems="10"
+            android:hint="Contraseña"
             android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_A700"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cedulaRegis"
-            android:hint="Contraseña"
-            android:textColorHint="#4FC3F7"
-            android:backgroundTint="#4FC3F7"/>
+            app:layout_constraintTop_toBottomOf="@+id/cedulaRegis" />
 
         <EditText
             android:id="@+id/passRegis2"
-            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -200,14 +197,15 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
+            android:backgroundTint="#4FC3F7"
             android:ems="10"
+            android:hint="Confirmar contraseña"
             android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/purple_A700"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passRegis"
-            android:hint="Confirmar contraseña"
-            android:textColorHint="#4FC3F7"
-            android:backgroundTint="#4FC3F7"/>
+            app:layout_constraintTop_toBottomOf="@+id/passRegis" />
 
 
         <Button
@@ -219,12 +217,12 @@
             android:layout_marginTop="14dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
-            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_rounded"
             android:text="Confirmar"
+            app:backgroundTint="@color/purple_A700"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/passRegis2"
-            android:background="@drawable/button_rounded"/>
+            app:layout_constraintTop_toBottomOf="@+id/passRegis2" />
         <ProgressBar
             android:id="@+id/progresBar"
             android:visibility="gone"
