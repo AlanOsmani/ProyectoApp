@@ -37,7 +37,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:contentDescription="TODO"
-            android:src="@drawable/buho"
+            android:src="@drawable/cerebro"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="3dp"
             tools:srcCompat="@drawable/cerebro" />
